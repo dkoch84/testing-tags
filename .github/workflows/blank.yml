@@ -21,6 +21,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
+      - run: |
+          git tag -l
+          git log
       - uses: devops-infra/action-pull-request@v0.5.0
         name: PR Maker
         with:
