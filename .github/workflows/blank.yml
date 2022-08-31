@@ -27,8 +27,7 @@ jobs:
         with:
           ref: dev
       - run: |
-          git tag -l
-          git log
+          git checkout dev
       - uses: devops-infra/action-pull-request@v0.5.0
         name: PR Maker
         with:
