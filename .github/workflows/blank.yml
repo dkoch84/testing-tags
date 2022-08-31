@@ -25,7 +25,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: master
+          ref: dev
+          fetch-depth: 0
       - run: |
           git checkout dev
       - run: |
