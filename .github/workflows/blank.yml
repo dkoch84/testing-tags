@@ -37,7 +37,4 @@ jobs:
           body: "**Automated pull request**"
           reviewer: dkoch84
           assignee: dkoch84
-          label: enhancement
-          milestone: My milestone
-          draft: true
           get_diff: true
