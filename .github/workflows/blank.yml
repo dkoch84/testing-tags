@@ -27,16 +27,6 @@ jobs:
         with:
           ref: dev
           fetch-depth: 0
-      - run: |
-          git checkout dev
-      - run: |
-          git branch -l
-      - run: |
-          git branch -a
-      - run: |
-          git log
-      - run: |
-          git diff master..dev
       - uses: devops-infra/action-pull-request@v0.5.0
         name: PR Maker
         with:
