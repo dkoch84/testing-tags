@@ -25,4 +25,3 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           base: master
-          branch: dev
